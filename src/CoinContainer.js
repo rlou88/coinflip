@@ -37,8 +37,8 @@ class CoinContainer extends Component {
     return (
       <div className="CoinContainer">
         <h2>Let's Flip a Coin</h2>
-        <button onClick={this.handleClick}>Flip Me!</button>
         {this.state.currCoin && <Coin info={this.state.currCoin} />}
+        <button onClick={this.handleClick}>Flip Me!</button>
         <p>
           Out of {this.state.nFlips} flips, there have been {this.state.nHeads}{" "}
           heads and {this.state.nTails} tails.
